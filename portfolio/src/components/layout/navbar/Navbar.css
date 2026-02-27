@@ -1,0 +1,42 @@
+.navbar{
+    color:gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+
+    border-bottom: 1px solid #444;
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.name {
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.right {
+  display: flex;
+    align-items: center;
+  gap: 28px;
+}
+
+.right h2 {
+  color: #cfcfcf;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.right h2:hover {
+  color: #C778DD;
+}
