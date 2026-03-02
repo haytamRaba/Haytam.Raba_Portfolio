@@ -1,0 +1,18 @@
+.projects-section{
+    padding: 50px;
+    /* color: #ABB2BF; */
+    border:1px solid #bfb0ab;
+    
+}
+.projects-section h1{
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #ABB2BF;
+    box-shadow: 5px 5px 15px rgba(139, 195, 246, 0.2);
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}

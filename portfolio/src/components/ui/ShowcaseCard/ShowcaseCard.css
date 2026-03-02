@@ -1,0 +1,125 @@
+.showcase-card {
+  width: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111;
+  color: white;
+  font-family: Inter, sans-serif;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.4);
+}
+
+/* image */
+.card-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,.7);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* body */
+.card-body {
+  padding: 18px;
+}
+
+.card-body h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.overview {
+  font-size: 14px;
+  opacity: .8;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 12px 0;
+  opacity: .6;
+}
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tools span {
+  background: #222;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+.description {
+  font-size: 13px;
+  opacity: .75;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px; 
+  margin-top: 15px;
+}
+
+.btn {
+  background: #1f2937; 
+  color: #f3f4f6; /* light text */
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+.btn:hover {
+  background: #374151; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.btn-secondary {
+  background: #111827; /* darker background for secondary */
+  color: #9ca3af; /* grayish text */
+  border: 2px solid #4f46e5; /* accent border */
+}
+
+.btn-secondary:hover {
+  background: #1f2937; /* lighter dark gray on hover */
+  color: #d1d5db; /* lighter text on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.btn span.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover span.arrow {
+  transform: translateX(4px);
+}

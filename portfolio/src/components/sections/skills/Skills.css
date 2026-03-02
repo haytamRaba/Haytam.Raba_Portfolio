@@ -1,0 +1,9 @@
+
+
+.skills-section h1{
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #ABB2BF;
+    box-shadow: 5px 5px 15px rgba(139, 195, 246, 0.2);
+}
