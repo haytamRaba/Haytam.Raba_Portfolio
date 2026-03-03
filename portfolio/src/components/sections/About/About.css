@@ -1,0 +1,208 @@
+.about-section {
+    margin: 80px 0;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: aliceblue;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #ffffff 0%, #a0d8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(160, 216, 255, 0.1);
+}
+
+.about-section p , .about-section h2{
+    font-size: 1.05rem;
+    color: #e0e7ff;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    margin: 0 0 30px 0;
+    white-space: pre-wrap;
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+.about-section p::first-letter {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+.skills-highlight {
+    margin: 40px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(160, 216, 255, 0.1) 0%, rgba(100, 180, 255, 0.05) 100%);
+    border-left: 2px solid #60b4ff;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.skills-highlight h3 {
+    font-size: 1.4rem;
+    color: #a0d8ff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.skills-highlight ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.skills-highlight li {
+    font-size: 1rem;
+    color: #c5d9f1;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    border-left: 1px solid #60b4ff;
+    transition: all 0.3s ease;
+}
+
+.skills-highlight li:hover {
+    background: rgba(160, 216, 255, 0.15);
+    transform: translateX(5px);
+    border-left-color: #ffffff;
+}
+
+/* Philosophy Section */
+.philosophy {
+    margin: 35px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(200, 150, 255, 0.1) 0%, rgba(150, 100, 255, 0.05) 100%);
+    border-radius: 8px;
+    border: 1px solid rgba(160, 216, 255, 0.2);
+}
+
+.philosophy p {
+    font-size: 1.1rem;
+    color: #d4a5ff;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.4px;
+}
+
+.philosophy strong {
+    color: #e9b4ff;
+    font-weight: 600;
+}
+
+/* CTA Buttons */
+.about-cta {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #60b4ff;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    background: linear-gradient(135deg, #60b4ff 0%, #4da3ff 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(96, 180, 255, 0.3);
+}
+
+.cta-button:hover {
+    box-shadow: 0 6px 20px rgba(96, 180, 255, 0.5);
+    transform: translateY(-2px);
+    border-color: #ffffff;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: #a0d8ff;
+    border-color: #a0d8ff;
+}
+
+.cta-button.secondary:hover {
+    background: rgba(160, 216, 255, 0.1);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(160, 216, 255, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-section {
+        margin: 60px 0;
+        padding: 30px 15px;
+    }
+
+    .about-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .skills-highlight ul {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        margin: 40px 0;
+        padding: 20px 12px;
+    }
+
+    .about-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .skills-highlight {
+        padding: 20px;
+    }
+
+    .skills-highlight h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .about-cta {
+        flex-direction: column;
+    }
+}
