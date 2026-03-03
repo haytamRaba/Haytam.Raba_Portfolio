@@ -1,9 +1,130 @@
+.skills-wrapper {
+  position: relative;
+  overflow: hidden;
+}
 
+.skills-glitch-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
-.skills-section h1{
-    display: inline-block;
-    margin-bottom: 40px;
-    font-size: 32px;
-    color: #ABB2BF;
-    box-shadow: 5px 5px 15px rgba(139, 195, 246, 0.2);
+.skills-section {
+  color: #abb2bf;
+  padding: 4rem 2rem;
+  position: relative;
+  font-family: 'Fira Code', monospace;
+  background-color: transparent;
+}
+
+.bottom-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #abb2bf;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+
+.skills-decor {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.dot-grid {
+  width: 12px;
+  height: 12px;
+  background-image: radial-gradient(#abb2bf 20%, transparent 20%);
+  background-size: 4px 4px;
+  opacity: 0.45;
+}
+
+.square-outline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #444;
+}
+
+.square-outline.accent {
+  transform: rotate(45deg);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.skills-category {
+  border: 1px solid #444;
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skills-category:hover {
+  border-color: #c778dd;
+  transform: translateY(-2px);
+}
+
+.category-title {
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+  font-size: 0.98rem;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  font-size: 0.9rem;
+  color: #abb2bf;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.exploring-section {
+  margin-top: 2rem;
+  border: 1px solid #444;
+  border-left: 3px solid #c778dd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #111;
+}
+
+.exploring-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.6rem 0;
+}
+
+.exploring-text {
+  margin: 0;
+  color: #abb2bf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .skills-section {
+    padding: 3rem 1.2rem;
+  }
+
+  .skills-container {
+    margin-top: 5rem;
+  }
 }

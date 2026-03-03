@@ -14,7 +14,6 @@ const Home = () => {
       <Skills/>
  
  
-      <h1>Welcome to My Portfolio</h1>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import './hero.css';
 import hero from '../../../assets/hero.jpeg';
 import  InteractiveGridBackground  from '../../lightswind/interactive-grid-background' 
 
+
 const Hero = () => {
   return (
     <section className="hero">
@@ -11,6 +12,7 @@ const Hero = () => {
 
       {/* Left text */}
       <div className="hero-left">
+        {/* <TerminalCard command="npm install your-package-name" language="bash" />; */}
         <h1>Hi, I'm Haytam Raba</h1>
         <p>
           I'm a Software & Network Engineering student passionate about coding, building projects, and sharing knowledge.
