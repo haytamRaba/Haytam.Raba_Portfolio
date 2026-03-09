@@ -5,7 +5,8 @@ import Projects from '../../components/sections/Projects/Projects'
 import Skills from '../../components/sections/skills/Skills'
 import Certifications from '../../components/sections/Certifications/Certifications'
 import About from '../../components/sections/About/About'
-
+import Eduction from '../../components/sections/Eduction/Eduction'
+import ResumeSection from '../../components/sections/ResumeSection/ResumeSection'
 
 const Home = () => {
   return (
@@ -14,9 +15,10 @@ const Home = () => {
       <Hero/>
       <Projects/>
       <Skills/>
+      <Eduction/>
       <Certifications/>
       <About/>
- 
+      <ResumeSection/>
  
     </div>
   )

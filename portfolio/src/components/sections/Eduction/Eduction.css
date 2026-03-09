@@ -1,0 +1,52 @@
+.education-section {
+	padding: 50px;
+	border: 1px solid #bfb0ab;
+}
+
+.education-timeline-shell {
+    padding: 25px;
+	--background: 220 13% 9%;
+	--foreground: 220 16% 93%;
+	--card: 220 11% 13%;
+	--card-foreground: 220 16% 93%;
+	--muted-foreground: 220 11% 70%;
+	--border: 220 10% 26%;
+	--primary: 286 55% 67%;
+	--primary-foreground: 220 16% 93%;
+	border-radius: 12px;
+	background: radial-gradient(circle at 15% 0%, rgba(199, 120, 221, 0.12), rgba(30, 30, 30, 0.92) 42%);
+	color: #e6edf3;
+}
+
+.education-timeline-shell h2 {
+	color: #e6edf3;
+	font-size: 32px;
+	margin: 0;
+}
+
+.education-timeline-shell p {
+	color: #abb2bf;
+}
+
+.education-timeline-shell .border,
+.education-timeline-shell .border-2 {
+	border-color: #444;
+}
+
+.education-timeline-shell .text-primary {
+	color: #c778dd;
+}
+
+.education-timeline-shell .text-muted-foreground {
+	color: #abb2bf;
+}
+
+@media (max-width: 768px) {
+	.education-section {
+		padding: 40px 16px;
+	}
+
+	.education-timeline-shell h2 {
+		font-size: 2rem;
+	}
+}
