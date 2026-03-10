@@ -1,16 +1,43 @@
 .projects-section{
     padding: 50px;
     /* color: #ABB2BF; */
-    border:1px solid #bfb0ab;
+   
     
 }
-.projects-section h1{
+/* .projects-section h1{
     display: inline-block;
     margin-bottom: 40px;
     font-size: 32px;
     color: #ABB2BF;
     box-shadow: 5px 5px 15px rgba(139, 195, 246, 0.2);
+} */
+ .bottom-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #abb2bf;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: #ffffff;
 }
+
+.skills-decor {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.dot-grid {
+  width: 12px;
+  height: 12px;
+  background-image: radial-gradient(#abb2bf 20%, transparent 20%);
+  background-size: 4px 4px;
+  opacity: 0.45;
+}
+
 .projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

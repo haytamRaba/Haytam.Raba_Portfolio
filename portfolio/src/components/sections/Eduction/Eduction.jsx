@@ -6,39 +6,40 @@ const educationEvents = [
   {
     year: '2023 - Present',
     title: 'Software & Network Engineering',
-    subtitle: 'Specialized Engineering Program',
+    subtitle: 'EMSI Casablanca – Engineering Cycle',
     description:
-      'Deepening my expertise in software architecture, network systems, and scalable development practices through academic and project-based work.',
+      'Studying advanced software engineering, networking, system architecture, and software design while developing academic and personal projects in C, C++, and web technologies.',
   },
   {
     year: '2022 - 2023',
-    title: 'Applied Computer Science Foundation',
-    subtitle: 'Technology Preparatory Track',
+    title: 'Computer Science Foundations',
+    subtitle: 'Preparatory Engineering Studies',
     description:
-      'Strengthened fundamentals in algorithms, databases, and object-oriented programming while building structured coding habits.',
+      'Built strong fundamentals in programming, algorithms, databases, and object-oriented programming while beginning to explore software engineering concepts.',
+  },
+  {
+    year: '2022 - Present',
+    title: 'Self-Driven Development Projects',
+    subtitle: 'GitHub & Personal Portfolio',
+    description:
+      'Developing personal projects including web applications and C++ programs while learning front-end technologies (HTML, CSS, JavaScript) and improving software design skills.',
   },
   {
     year: '2021 - 2022',
-    title: 'Independent Full-Stack Learning',
-    subtitle: 'Project-Led Training',
+    title: 'Introduction to Programming',
+    subtitle: 'Self-Learning Journey',
     description:
-      'Built practical web projects with React, APIs, and backend services to bridge theory and real-world implementation.',
-  },
-  {
-    year: '2020 - 2021',
-    title: 'Web Development Fundamentals',
-    subtitle: 'Self-Paced Technical Track',
-    description:
-      'Started my development journey by learning HTML, CSS, and JavaScript, focusing on clean structure and responsive interfaces.',
+      'Started learning programming fundamentals and computer science basics, discovering interest in software engineering and technology development.',
   },
 ]
 
 const Eduction = () => {
   return (
     <section className='education-section'>
+      <h1 className="bottom-title"># Carreer Path</h1>
       <ScrollTimeline
         events={educationEvents}
-        title='#CarreerPath'
+        title='Education & Experience'
         subtitle='Scroll to explore my academic and technical journey'
         progressIndicator={false}
         cardAlignment='alternating'

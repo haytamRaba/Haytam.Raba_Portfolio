@@ -1,8 +1,16 @@
 .education-section {
 	padding: 50px;
-	border: 1px solid #bfb0ab;
+	
 }
-
+ .bottom-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #abb2bf;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
 .education-timeline-shell {
     padding: 25px;
 	--background: 220 13% 9%;

@@ -20,7 +20,6 @@ const Navbar = () => {
         <h2 >#About</h2>
         <h2>#Resume</h2>
         <h2>#Contact</h2>
-        <h2>#FaQ</h2>
         <span>Eng</span>
       </div>
 

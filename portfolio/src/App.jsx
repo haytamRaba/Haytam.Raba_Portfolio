@@ -1,12 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import Home from './pages/home/Home'
+import TerminalSplash from './components/ui/splash/TerminalSplash'
 function App() {
+  const [showSplash, setShowSplash] = useState(true)
 
 
   return (
     <>
-      <Home/>
+      {showSplash ? (
+        <TerminalSplash onComplete={() => setShowSplash(false)} />
+      ) : (
+        <Home/>
+      )}
     </>
   )
 }

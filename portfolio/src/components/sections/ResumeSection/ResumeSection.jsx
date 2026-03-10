@@ -7,8 +7,7 @@ export default function ResumeSection() {
       <h2 className="resume-title">My Resume</h2>
 
       <p className="resume-text">
-        You can view my resume online or download it to learn more about my
-        education, skills, and projects.
+         view my resume or download it!
       </p>
 
       <div className="resume-buttons">
